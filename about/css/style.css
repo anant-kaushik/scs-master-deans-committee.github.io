@@ -96,3 +96,11 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 42%;
+  color: 0px 35px 78px -23px rgba(0, 0, 0, 0.03);
+  padding-bottom: 20px;
+}

@@ -34,6 +34,10 @@ ol li::before {
   margin-right: 12px;
 }
 
+ul {
+  line-height: 1.8em;
+}
+
 ul.plus {
   list-style-type: none;
   padding-inline-start: 35px;
@@ -41,7 +45,6 @@ ul.plus {
 
 ul.plus li {
   text-indent: -2em;
-  line-height: 1.8em;
   padding-left: 0.6em;
 }
 
@@ -49,6 +52,7 @@ ul.plus li::before {
   content: "\e114";
   font-family: "icomoon";
   float: left;
+  font-size: 10px;
   width: 1.4em;
   margin-right: 12px;
 }
@@ -72,30 +76,32 @@ aside {
 
 nav ul li {
   display: inline;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4) !important;
   text-decoration: none;
   position: relative;
-  padding: 10px 0;
-  padding-bottom: 3px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  margin: 0 0 10px 0;
-  padding: 0;
   list-style: none;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+  line-height: 30px;
   letter-spacing: 1px;
 }
 
-nav ul li.active {
-  color: #000;
+nav ul li a {
+  color: rgba(0, 0, 0, 0.4) !important;
 }
 
-nav ul li:hover {
+nav ul li.active {
+  color: #000 !important;
+  border-bottom: 1px solid #000;
+}
+
+nav ul li a:hover {
   cursor: pointer;
-  color: #000;
+  color: #000 !important;
   border-bottom: 1px solid #000;
 }
 
@@ -128,7 +134,7 @@ nav ul li a:hover {
   color: #cc002b;
 }
 
-aside ul li a {
+.bottom-items ul li a {
   color: rgba(0, 0, 0, 0.4);
   text-decoration: none;
   position: relative;
